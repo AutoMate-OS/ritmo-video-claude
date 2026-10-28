@@ -1,0 +1,10 @@
+numpy
+librosa
+soundfile
+faster-whisper
+# facoltativi: separazione in tracce e allineamento forzato preciso
+demucs
+torch
+torchaudio
+# per lo spettrogramma di analizza.py
+matplotlib

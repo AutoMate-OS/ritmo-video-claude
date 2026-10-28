@@ -1,0 +1,419 @@
+{
+ "_nota": "Partitura vera del video RITMO di Automate OS (28/10/2026): il drop del brano apre il video (4,5 s pieni) e torna su 'Adesso'. Ogni evento e' agganciato a una parola o a un battito. I file audio (voce, musica, suoni) non sono inclusi: mettici i tuoi.",
+ "voce": "voce.wav",
+ "parole": "parole.json",
+ "durata": {
+  "dopo_voce": 2.2
+ },
+ "suoni": "suoni",
+ "musica": {
+  "griglia": "griglia.json",
+  "tracce": {
+   "armonia": "musica/other.wav",
+   "batteria": "musica/drums.wav",
+   "basso": "musica/bass.wav"
+  },
+  "segmenti": [
+   {
+    "da": 0,
+    "a": {
+     "parola": "musica",
+     "fine": true,
+     "offset": 0.03
+    },
+    "aggancio": {
+     "misura": 20,
+     "su": 0.0
+    }
+   },
+   {
+    "da": {
+     "parola": "Il",
+     "offset": -0.9
+    },
+    "a": "fine",
+    "aggancio": {
+     "misura": 20,
+     "su": {
+      "parola": "Adesso",
+      "offset": -0.02
+     }
+    }
+   }
+  ],
+  "volume": 0.42,
+  "ducking": 0.4,
+  "fade_out": 1.4
+ },
+ "automazioni": [
+  {
+   "traccia": "batteria",
+   "da": {
+    "parola": "Il",
+    "offset": -0.9
+   },
+   "a": {
+    "parola": "così"
+   },
+   "livello": 0,
+   "rampa": 0.2
+  },
+  {
+   "traccia": "basso",
+   "da": {
+    "parola": "Il",
+    "offset": -0.9
+   },
+   "a": {
+    "parola": "Adesso",
+    "offset": -0.02
+   },
+   "livello": 0,
+   "rampa": 0.01
+  },
+  {
+   "traccia": "*",
+   "da": {
+    "parola": "mezzo"
+   },
+   "a": {
+    "parola": "silenzio",
+    "fine": true
+   },
+   "livello": 0.3,
+   "rampa": 0.5
+  },
+  {
+   "traccia": "*",
+   "da": {
+    "parola": "silenzio",
+    "fine": true
+   },
+   "a": {
+    "parola": "così",
+    "offset": -0.02
+   },
+   "livello": 0,
+   "rampa": 0.08
+  },
+  {
+   "traccia": "batteria",
+   "da": {
+    "parola": "così"
+   },
+   "a": {
+    "parola": "E",
+    "offset": -0.1
+   },
+   "livello": 0,
+   "rampa": 0.2
+  },
+  {
+   "traccia": "*",
+   "da": {
+    "parola": "conta",
+    "fine": true,
+    "offset": 0.3
+   },
+   "a": {
+    "parola": "Adesso",
+    "offset": -0.02
+   },
+   "livello": 0,
+   "rampa": 0.04
+  }
+ ],
+ "eventi": [
+  {
+   "id": "apertura",
+   "t": 0.0,
+   "suono": "impact-soft-2",
+   "vol": 0.5,
+   "visivo": "stacco",
+   "nota": "primo colpo del drop, esplosione di pixel"
+  },
+  {
+   "id": "lettere",
+   "t": 0,
+   "ripeti": {
+    "parole_da": {
+     "parola": "Questo"
+    },
+    "parole_a": {
+     "parola": "montato"
+    },
+    "offset": -0.03
+   },
+   "suono": [
+    "click-sharp",
+    "key-press"
+   ],
+   "vol": 0.22,
+   "visivo": "lettere-volano",
+   "sopra_voce": true
+  },
+  {
+   "id": "claude",
+   "t": {
+    "parola": "Claude"
+   },
+   "suono": "pop-1",
+   "vol": 0.3,
+   "visivo": "logo-claude-credito"
+  },
+  {
+   "id": "guarda",
+   "t": {
+    "battito_dopo": {
+     "parola": "Ora",
+     "offset": -0.2
+    }
+   },
+   "visivo": "stacco",
+   "nota": "la scena piena: onda, icone, coriandoli sul battito"
+  },
+  {
+   "id": "battito-apertura",
+   "t": 0,
+   "ripeti": {
+    "battiti": 10,
+    "ogni": 1,
+    "da": {
+     "parola": "Ora"
+    }
+   },
+   "visivo": "pulsa"
+  },
+  {
+   "id": "spegni",
+   "t": {
+    "parola": "musica",
+    "fine": true,
+    "offset": 0.03
+   },
+   "visivo": "stacco",
+   "muto": true,
+   "nota": "tutto si spegne: slide piatta"
+  },
+  {
+   "id": "slide",
+   "t": {
+    "parola": "presentazione",
+    "offset": 0.15
+   },
+   "suono": "click-mouse",
+   "vol": 0.55,
+   "visivo": "slide-avanti"
+  },
+  {
+   "id": "ritorno",
+   "t": {
+    "parola": "Il",
+    "offset": -1.05
+   },
+   "suono": "whoosh-reverse-1s",
+   "vol": 0.26
+  },
+  {
+   "id": "frantuma",
+   "t": {
+    "parola": "Il"
+   },
+   "suono": "glitch-soft-1",
+   "vol": 0.3,
+   "visivo": "taglio"
+  },
+  {
+   "id": "tre",
+   "t": 0,
+   "ripeti": {
+    "parole_da": {
+     "parola": "sono"
+    },
+    "parole_a": {
+     "parola": "mosse"
+    }
+   },
+   "suono": [
+    "tap",
+    "tap",
+    "pop-2"
+   ],
+   "vol": 0.3,
+   "visivo": "slot-1-2-3"
+  },
+  {
+   "id": "clic-parole",
+   "t": 0,
+   "ripeti": {
+    "parole_da": {
+     "parola": "ogni"
+    },
+    "parole_a": {
+     "parola": "clic"
+    },
+    "offset": -0.02
+   },
+   "suono": [
+    "click-sharp",
+    "tap"
+   ],
+   "vol": 0.48,
+   "visivo": "parola-cade",
+   "sopra_voce": true
+  },
+  {
+   "id": "notte",
+   "t": {
+    "parola": "La",
+    "n": 3,
+    "offset": -0.12
+   },
+   "suono": "whoosh-short",
+   "vol": 0.22,
+   "visivo": "taglio"
+  },
+  {
+   "id": "vuoto",
+   "t": {
+    "parola": "silenzio",
+    "fine": true
+   },
+   "visivo": "vuoto-si-allarga"
+  },
+  {
+   "id": "cosi",
+   "t": {
+    "parola": "così"
+   },
+   "suono": "impact-soft-1",
+   "vol": 0.62,
+   "visivo": "taglio",
+   "importante": true,
+   "sopra_voce": true
+  },
+  {
+   "id": "cursore",
+   "t": {
+    "parola": "basso"
+   },
+   "suono": "tap",
+   "vol": 0.25,
+   "visivo": "cursore-basso-a-zero"
+  },
+  {
+   "id": "riser",
+   "t": {
+    "parola": "conta",
+    "fine": true,
+    "offset": -1.7
+   },
+   "suono": "riser-short-2s",
+   "vol": 0.3,
+   "dur": 2.0
+  },
+  {
+   "id": "attesa",
+   "t": {
+    "parola": "conta",
+    "fine": true,
+    "offset": 0.3
+   },
+   "visivo": "attesa",
+   "muto": true
+  },
+  {
+   "id": "drop",
+   "t": {
+    "parola": "Adesso",
+    "offset": -0.02
+   },
+   "suono": "impact-soft-2",
+   "vol": 0.75,
+   "visivo": "taglio",
+   "importante": true,
+   "sopra_voce": true
+  },
+  {
+   "id": "stacchi",
+   "t": 0,
+   "ripeti": {
+    "battiti": 2,
+    "ogni": 2,
+    "da": {
+     "battito_dopo": {
+      "parola": "Adesso"
+     },
+     "k": 2
+    }
+   },
+   "suono": "whoosh-short",
+   "vol": 0.16,
+   "visivo": "pulsa"
+  },
+  {
+   "id": "lettere-ritmo",
+   "t": 0,
+   "ripeti": {
+    "battiti": 5,
+    "ogni": 1,
+    "da": {
+     "parola": "RITMO",
+     "n": 2,
+     "offset": -0.1
+    }
+   },
+   "suono": [
+    "pop-2",
+    "tap"
+   ],
+   "vol": 0.3,
+   "visivo": "lettera-e-sfondo"
+  },
+  {
+   "id": "messaggio",
+   "t": {
+    "parola": "mando",
+    "offset": 0.14
+   },
+   "suono": "notification-3",
+   "vol": 0.38,
+   "visivo": "dm-arriva"
+  },
+  {
+   "id": "cartello",
+   "t": {
+    "battito_dopo": {
+     "parola": "usato",
+     "fine": true
+    },
+    "k": 1
+   },
+   "suono": "impact-soft-3",
+   "vol": 0.3,
+   "visivo": "stacco"
+  },
+  {
+   "id": "visto",
+   "t": {
+    "parola": "Visto?",
+    "offset": -0.04
+   },
+   "visivo": "stacco",
+   "muto": true,
+   "nota": "dalla scena congelata alla slide"
+  },
+  {
+   "id": "mossa1",
+   "t": {
+    "parola": "La",
+    "n": 2,
+    "offset": -0.14
+   },
+   "suono": "whoosh-short",
+   "vol": 0.2,
+   "visivo": "stacco",
+   "nota": "frusta verso la scena scura dei tasti"
+  }
+ ]
+}

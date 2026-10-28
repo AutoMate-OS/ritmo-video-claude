@@ -1,0 +1,8 @@
+Ho un video da montare a tempo: la voce è in voce.wav, il testo in copione.txt, la musica in musica.mp3.
+Non indovinare il ritmo: misuralo.
+1. Ricava l'inizio e la fine di ogni parola della voce (allineamento forzato o Whisper con i tempi per parola) e scrivili in parole.json.
+2. Ricava dalla musica tempo, battiti e l'inizio di ogni battuta; trova il drop (la battuta in cui entrano batteria e basso). Se puoi, separa la musica in tracce (armonia, batteria, basso) con demucs.
+3. Scrivi una partitura in JSON: ogni evento (taglio, suono, animazione) agganciato a una parola o a un battito, mai a secondi scritti a mano. Regole: il pezzo più bello della musica nei primi 3 secondi; un suono per ogni cosa che si muove; mezzo secondo di silenzio prima dei tagli importanti; il basso trattenuto fino alla parola chiave; dopo il drop i tagli cadono sul battito.
+4. Controlla la partitura (taglio senza suono, suono forte sopra una parola che riparte dopo una pausa, due suoni nello stesso istante) e correggila.
+5. Fai il mix (voce sopra, effetti poco sotto, musica sotto che si abbassa quando parla la voce, -14 LUFS) e scrivi i tempi in un file che l'animazione legge.
+6. Prima del render controlla ogni fotogramma: niente testi sovrapposti, niente fuori dalle zone sicure, niente tratti senza niente da leggere. Dopo il render controlla che i tagli cadano dove previsto.
